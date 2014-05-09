@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<component name="org.nuxeo.compoundform.widget.contrib" version="1.0.0">
+<component name="org.nuxeo.valuechangelistener.widget.contrib" version="1.0.0">
 
   <extension target="org.nuxeo.ecm.platform.forms.layout.WebLayoutManager"
     point="widgettypes">
