@@ -10,7 +10,8 @@
 
   <c:if test="#{widget.mode == 'edit'}">
      <h:inputText id="#{widget.id}_textinput" 
-                  onchange="submit()" 
-                  valueChangeListener="#{valueChangeListener.valueChange}"/>     
+                  valueChangeListener="#{valueChangeListener.valueChange}">     
+       <a4j:support event="onchange" ajaxSingle="true"/>
+     <h:inputText>
   </c:if> 
 </f:subview>
