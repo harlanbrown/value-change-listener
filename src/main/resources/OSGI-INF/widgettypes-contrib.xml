@@ -1,12 +1,9 @@
 <?xml version="1.0"?>
 <component name="org.nuxeo.valuechangelistener.widget.contrib" version="1.0.0">
-
-  <extension target="org.nuxeo.ecm.platform.forms.layout.WebLayoutManager"
-    point="widgettypes">
-
+  <extension target="org.nuxeo.ecm.platform.forms.layout.WebLayoutManager" point="widgettypes">
     <widgetType name="textWithValueChangeListener">
       <configuration>
-        <sinceVersion>5.9.3</sinceVersion>
+        <sinceVersion>8.10</sinceVersion>
         <title>Text With Value Change Listener</title>
         <description>
           <p>textWithValueListener</p>
@@ -35,6 +32,35 @@
        /widgets/textWithValueChangeListener_widget_template.xhtml
       </property>
     </widgetType>
-
-  </extension>
+    <widgetType name="textWithValueChangeListenerAlt">
+      <configuration>
+        <sinceVersion>8.10</sinceVersion>
+        <title>Text With Value Change Listener</title>
+        <description>
+          <p>textWithValueListener</p>
+        </description>
+        <categories>
+          <category>document</category>
+        </categories>
+        <supportedModes>
+          <mode>view</mode>
+          <mode>edit</mode>
+        </supportedModes>
+        <fields>
+          <list>true</list>
+          <complex>false</complex>
+          <supportedTypes>
+            <type>string</type>
+          </supportedTypes>
+        </fields>
+        <properties>
+        </properties>
+      </configuration>
+      <handler-class>
+        org.nuxeo.ecm.platform.forms.layout.facelets.plugins.TemplateWidgetTypeHandler
+      </handler-class>
+      <property name="template">
+       /widgets/textWithValueChangeListener_alt_widget_template.xhtml
+      </property>
+    </widgetType>  </extension>
 </component>
